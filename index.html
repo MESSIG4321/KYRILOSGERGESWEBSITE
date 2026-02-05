@@ -18,8 +18,8 @@
         /* Global styling */
         body {
             font-family: 'Poppins', sans-serif;
-            color: #fff;
-            background: #121212;
+            color: #333;
+            background: #f4f4f9;
             margin: 0;
         }
 
@@ -35,12 +35,13 @@
             padding: 30px 0;
             text-align: center;
             border-bottom: 3px solid #444;
+            color: white;
         }
 
         header h1 {
             font-size: 3rem;
             font-weight: bold;
-            color: #fff;
+            color: white;
         }
 
         header p {
@@ -73,11 +74,15 @@
         h2 {
             font-size: 2rem;
             margin-bottom: 15px;
-            color: #f5f5f5;
+            color: #333;
         }
 
         section {
             padding: 40px 0;
+            background: white;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         ul {
@@ -90,16 +95,16 @@
 
         /* Experience Section */
         .experience-item {
-            background: #282828;
+            background: #f9f9f9;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
         }
 
         .experience-item:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .experience-item h3 {
@@ -109,16 +114,16 @@
 
         /* Project Section */
         .project-item {
-            background: #282828;
+            background: #f9f9f9;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
         }
 
         .project-item:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .project-item h3 {
@@ -127,22 +132,23 @@
         }
 
         .project-item a {
-            color: #ff6347;
+            color: #2575fc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         .project-item a:hover {
-            color: #ff4500;
+            color: #ff6347;
         }
 
         /* Footer */
         footer {
-            background: #222;
-            color: #bbb;
+            background: #333;
+            color: white;
             text-align: center;
             padding: 20px;
+            font-size: 0.9rem;
         }
 
         footer p {
@@ -151,7 +157,7 @@
 
         /* Buttons */
         .btn {
-            background-color: #ff6347;
+            background-color: #2575fc;
             padding: 10px 20px;
             color: white;
             text-decoration: none;
@@ -161,3 +167,88 @@
         }
 
         .btn:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Kyrilos Gerges</h1>
+            <p>Electrical and Computer Engineering | Web Developer | Innovator</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Electrical and Computer Engineering student at Wayne State University, focusing on embedded systems and software development. I thrive on creativity and technical expertise, always aiming to build cutting-edge solutions.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Wayne State University</strong> - Detroit, MI</p>
+            <p><em>Major: Electrical and Computer Engineering</em> | GPA: 3.65/4.0</p>
+            <p><strong>Relevant Coursework:</strong> Design in Engineering, Introduction to Programming and Computation for Engineers, Object-Oriented Programming</p>
+            <p><strong>Technical Skills:</strong> Arduino, MATLAB, C++, Microsoft Excel</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Front of Store Attendant - Target</h3>
+                <p><strong>April 2025 - September 2025</strong></p>
+                <ul>
+                    <li>Assisted 50+ customers per shift, enhancing guest satisfaction by 20%.</li>
+                    <li>Collaborated with team members to streamline operations during high-traffic hours.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Server - Kerby's Koney Island</h3>
+                <p><strong>April 2023 - August 2023</strong></p>
+                <ul>
+                    <li>Enhanced customer satisfaction by providing efficient service during peak hours.</li>
+                    <li>Coordinated with kitchen staff to reduce average wait times by 10%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Arduino Mini Arcade</h3>
+                <p>A tabletop arcade project combining air-hockey and a sensor-equipped basketball hoop. Programmed in C++ with IR sensors and LED animations.</p>
+                <a href="https://github.com/yourusername/arduino-arcade" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h3>Album Finder with Spotify API</h3>
+                <p>Created an album search tool using the Spotify API to fetch and display album metadata, enhancing user music discovery.</p>
+                <a href="https://github.com/yourusername/album-finder" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:Kerogerges2006@outlook.com">Kerogerges2006@outlook.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kyrilos-gerges" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Kyrilos Gerges - All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
